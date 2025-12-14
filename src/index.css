@@ -394,3 +394,12 @@ body {
     }
   }
 }
+
+/* Window maximize/minimize states */
+[data-state-maximized="true"] {
+  @apply w-screen! h-screen! top-0! left-0! rounded-none!;
+}
+
+[data-state-minimized="true"] {
+  @apply bottom-20! top-auto! left-1/2! -translate-x-1/2! translate-y-0! w-40! h-12! scale-75 opacity-75! pointer-events-auto;
+}
