@@ -95,7 +95,7 @@ const blogPosts = [
     date: "Aug 15, 2025",
     title: "The Ultimate Guide to Mastering GSAP Animations",
     image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+    link: "https://www.linkedin.com/posts/vaidik-shreshth_gsap-taught-me-what-performance-first-activity-7406035402127609856-XAlm?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD1ASB4BfmNydZagDT49gjVaikF20LRFs_A",
   },
 ];
 
