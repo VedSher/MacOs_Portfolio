@@ -1,16 +1,82 @@
-# React + Vite
+# macOS-Style Developer Portfolio 💻🍎
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully interactive **macOS-inspired developer portfolio** that behaves like a desktop operating system instead of a traditional website.
 
-Currently, two official plugins are available:
+This project simulates a real Mac environment where users interact with **apps, windows, and a responsive dock**, creating a premium, native-like experience directly in the browser.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Live Demo:** https://mac-os-portfolio-1xjn.vercel.app/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🖥️ **Desktop-like Experience**
+  - The portfolio functions like a real macOS desktop, not a static webpage.
+  - Users open apps, move windows, and multitask freely.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🪟 **Window-Based Architecture**
+  - Each section (Projects, Resume, Contact, Terminal, Photos, Blog) is an app.
+  - Apps open in **draggable, resizable windows**.
+  - Supports focus management, layered z-indexing, close/minimize actions, and smooth transitions.
+
+- 🎯 **Apple-Style Dock**
+  - Hover magnification and physics-inspired animations.
+  - Smooth, responsive interactions for a native macOS feel.
+
+- ✨ **Fluid Animations**
+  - Powered by **GSAP** for onboarding transitions, dock motion, and window interactions.
+  - Adds depth, polish, and realism to the UI.
+
+- 🎨 **Modern UI System**
+  - Styled using **Tailwind CSS** for fast, consistent, and responsive design.
+  - Clean typography and spacing inspired by macOS aesthetics.
+
+- 🧠 **Advanced State Management**
+  - **Zustand** manages global app and window state.
+  - Tracks active apps, open windows, positions, and focus states.
+
+- 🧩 **Reusable & Scalable Architecture**
+  - Built with **React reusable components** and higher-order patterns.
+  - Shared window logic keeps the system clean and extensible.
+
+- 📦 **Data-Driven Configuration**
+  - Apps, icons, and content are driven by configuration objects.
+  - Easy customization without touching core logic.
+
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **Zustand** – Global state management
+- **GSAP** – Animations
+- **Tailwind CSS** – Styling
+- **Vercel** – Deployment
+
+---
+
+## 🧪 What This Project Demonstrates
+
+- Advanced frontend engineering
+- Complex state management
+- OS-level UX simulation in the browser
+- Clean component architecture
+- Performance-conscious animations
+- Strong design + engineering balance
+
+---
+
+## 🎯 Purpose
+
+This project serves as:
+- A **personal brand statement**
+- A **technical showcase** beyond typical portfolios
+- A way to stand out for **frontend, full-stack, and UI-heavy roles**
+
+---
+
+## 📬 Feedback & Contributions
+
+Ideas, feedback, and improvements are always welcome.  
+If this made you smile or taught you something — mission accomplished.
+
