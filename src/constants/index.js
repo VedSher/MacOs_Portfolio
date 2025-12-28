@@ -365,7 +365,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "http://localhost:5173/",
+          href: "https://mac-os-portfolio-1xjn.vercel.app/",
           position: "top-10 right-20",
         },
         {
