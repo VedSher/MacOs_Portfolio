@@ -44,24 +44,10 @@ const setupTextHover = (container, type) => {
       const weight = min + (max - min) * intensity;
 
       animateLetter(letter, weight);
-
-      // debug
-      // console.log to verify we're receiving mousemove events
-      // eslint-disable-next-line no-console
-      console.log("gsap: mousemove", type, Math.round(weight));
-
-      // Fallback visible animation to test GSAP
-      gsap.to(letter, {
-        duration: 0.25,
-        ease: "power2.out",
-        opacity: 0.5 + intensity * 0.5,
-      });
     });
   };
 
   const handleMouseLeave = () => {
-    // eslint-disable-next-line no-console
-    console.log("gsap: mouseleave", type);
     const letters = container.querySelectorAll("span");
     const base = FONT_WEIGHTS[type].default || 400;
 
