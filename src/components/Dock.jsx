@@ -1,5 +1,7 @@
 import { dockApps } from '#constants';
 import useWindowStore from '#store/window';
+import useLocationStore from '#store/Location';
+import { locations } from '#constants';
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
 import { useRef } from 'react'
@@ -62,13 +64,21 @@ const Dock = () => {
   const toggleApp = (app) => {
     if(!app.canOpen) return;
 
-    const window = windows[app.id];
+        // Special case: trash in dock should open Finder and set active location to trash
+        if (app.id === 'trash') {
+            openWindow('finder');
+            const { setActiveLocation } = useLocationStore.getState();
+            if (setActiveLocation) setActiveLocation(locations.trash);
+            return;
+        }
 
-    if (!window) {
-        console.error(`No window found for app id: ${app.id}`);
-        return;
-    }
-    
+        const window = windows[app.id];
+
+        if (!window) {
+                console.error(`No window found for app id: ${app.id}`);
+                return;
+        }
+
     if(window.isOpen) {
         closeWindow(app.id);
     } else {
