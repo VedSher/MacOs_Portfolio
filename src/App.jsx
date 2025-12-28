@@ -1,4 +1,4 @@
-import { Dock, Navbar, Welcome } from '#components'
+import { Dock, Home, Navbar, Welcome } from '#components'
 import { Finder, Resume, Safari, Text, Image, Contact } from '#windows'
 import Terminal from '#windows/Terminal'
 import { gsap } from 'gsap'
@@ -21,6 +21,8 @@ const App = () => {
       <Image />
       <Finder />
       <Contact />
+      
+      <Home />
     </main>
   )
 }
